@@ -1,0 +1,17 @@
+.containerMain{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.newDiv {
+    text-align: right;
+}
+
+.countingGender{
+    text-align: right;
+    padding:1px 11%;
+    width:100%;
+    flex-shrink: 1;
+}
