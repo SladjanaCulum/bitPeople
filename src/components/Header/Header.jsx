@@ -1,8 +1,9 @@
 import React from "react";
 import "./Header.css";
 import { UserService } from "../services/UserService";
+import { HashRouter as Router, Link } from 'react-router-dom';
 
-const Header = ({ setSwitch, switchState, setUsers, setIsLoading }) => {
+const Header = ({ setSwitch, switchState, setUsers, setIsLoading, hideButtons }) => {
   const onClick = () => setSwitch(!switchState);
 
   function refresh() {
@@ -49,6 +50,7 @@ const Header = ({ setSwitch, switchState, setUsers, setIsLoading }) => {
       <button className="refreshButton" onClick={refresh}>
         <span className="material-icons">refresh</span>
       </button>
+      
     </nav>
   );
 };
